@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Projects - Everything Data</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Top-left label styles */
+        #logo-section {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1000;
+            width: auto;
+            height: auto;
+        }
+        #logo-section h1 {
+            font-size: 1rem;
+            margin: 0;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Make sure content is visible and scrollable */
+        body.projects-page #wrapper {
+            display: block !important;
+            opacity: 1 !important;
+            transform: none !important;
+            position: relative;
+        }
+
+        body.projects-page #wrapper .posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body class="is-preload projects-page">
+
+    <!-- Top-left label -->
+    <section id="logo-section">
+        <div class="content">
+            <h1><a href="index.html">Laima | Everything Data</a></h1>
+        </div>
+    </section>
+
+    <!-- Main Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="logo">
+                <span class="icon fa-chart-bar"></span>
+            </div>
+            <div class="content">
+                <div class="inner">
+                    <h1>Project Portfolio</h1>
+                    <p>Data analyses & storytelling through code, statistics, and visualizations.</p>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- Projects Section -->
+        <section>
+            <div class="inner" style="padding: 3rem;">
+                <h2 class="major">My Projects</h2>
+                <div class="posts">
+
+                    <article class="post">
+                        <a href="images/spotify.png" class="image">
+                            <img src="images/spotify.png" alt="Spotify EDA" style="width: 300px; height: auto; display: block; margin: 0 auto;" />
+                        </a>
+                        <h3>EDA: Spotify Data Analysis</h3>
+                        <p>Exploratory data analysis of Spotify song metrics to identify trends and relationships in musical features.</p>
+                        <ul class="actions">
+                            <li><a href="https://github.com/yourusername/spotify-eda" class="button">GitHub Repo</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="post">
+                        <a href="images/coursera.png" class="image">
+                            <img src="images/coursera.png" alt="Coursera EDA" style="width: 300px; height: auto; display: block; margin: 0 auto;" />
+                        </a>
+                        <h3>Coursera Capstone: Exploratory Data Analysis</h3>
+                        <p>Final project for a Coursera course, involving deep EDA and data visualization with real-world data.</p>
+                        <ul class="actions">
+                            <li><a href="https://github.com/yourusername/coursera-eda" class="button">GitHub Repo</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="post">
+                        <a href="images/mental_health.png" class="image">
+                            <img src="images/mental_health.png" alt="Mental Health Data Analysis" style="width: 300px; height: auto; display: block; margin: 0 auto;" />
+                        </a>
+                        <h3>Mental Health Data Analysis</h3>
+                        <p>Analyzing survey data on mental health in the tech industry to uncover trends and areas for improvement.</p>
+                        <ul class="actions">
+                            <li><a href="https://github.com/yourusername/mental-health-analysis" class="button">GitHub Repo</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="post">
+                        <a href="images/ab_testing.png" class="image">
+                            <img src="images/ab_testing.png" alt="A/B Testing" style="width: 300px; height: auto; display: block; margin: 0 auto;" />
+                        </a>
+                        <h3>A/B Testing of Marketing Strategies</h3>
+                        <p>Statistical A/B test comparing marketing approaches, analyzing conversion rates, and business impact.</p>
+                        <ul class="actions">
+                            <li><a href="https://github.com/yourusername/ab-testing-marketing" class="button">GitHub Repo</a></li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="copyright">
+                &copy; 2025 Laima. Design: <a href="https://html5up.net">HTML5 UP</a>.
+            </p>
+        </footer>
+    </div>
+
+    <!-- Background -->
+    <div id="bg"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
