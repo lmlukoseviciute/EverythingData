@@ -7,7 +7,7 @@ Welcome to [**Everything Data**](https://lmlukoseviciute.github.io/EverythingDat
 This portfolio website includes:
 
 - A responsive homepage with introduction and navigation.
-- A dedicated **Projects** page showcasing visual data science work in a clean, two-column layout.
+- A dedicated **Projects** page showcasing visual data science work.
 - External links to GitHub repositories for each project.
 - Social media links: LinkedIn, Kaggle, GitHub.
 
