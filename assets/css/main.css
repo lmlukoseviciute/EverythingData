@@ -719,30 +719,6 @@ input, select, textarea {
 			}
 
 		}
-/* Post */
-
-	.posts {
-	    display: grid;
-	    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	    gap: 2rem;
-	    padding: 1rem;
-	}
-	
-	.post {
-	    background: #fff; /* optional: add card look */
-	    border-radius: 8px;
-	    overflow: hidden;
-	    text-align: center;
-	}
-	
-	.post img {
-	    width: 100%;
-	    height: auto;
-	    display: block;
-	    margin: 0 auto;
-	    max-width: 300px;
-	}
-
 
 
 /* List */
