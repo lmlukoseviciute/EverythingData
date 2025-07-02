@@ -34,12 +34,21 @@
             transform: none !important;
             position: relative;
         }
-
+        
         body.projects-page #wrapper .posts {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
             gap: 2rem;
         }
+        
+        body.projects-page #wrapper .posts .post img {
+            width: 100%;
+            height: auto;
+            max-width: 350px;
+            display: block;
+            margin: 0 auto;
+        }
+
     </style>
 </head>
 <body class="is-preload projects-page">
@@ -76,7 +85,7 @@
 
                     <article class="post">
                         <a href="images/titanic.png" class="image">
-                            <img src="images/titanic.png" alt="EDA and Survival Prediction of Titanic Dataset" style="width: 300px; height: auto; display: block; margin: 0 auto;" />
+                            <img src="images/titanic.png" alt="EDA and Survival Prediction of Titanic Dataset" />
                         </a>
                         <h3>EDA and Survival Prediction of Titanic Dataset</h3>
                         <p>Exploratory data analysis and survival prediction of Titanic dataset. Training a Random Forest prediction model.</p>
@@ -87,7 +96,7 @@
 
                     <article class="post">
                         <a href="images/cancer_reg.png" class="image">
-                            <img src="images/cancer_reg.png" alt="breast cancer logistic regression" style="width: 300px; height: auto; display: block; margin: 0 auto;" />
+                            <img src="images/cancer_reg.png" alt="breast cancer logistic regression"  />
                         </a>
                         <h3>Logistic Regression for Breast Cancer Dataset</h3>
                         <p>Exploratory data analysis and tumor type prediction of breast cancer dataset. Training a Logistic Regression prediction model.</p>
@@ -98,7 +107,7 @@
 
                     <article class="post">
                         <a href="images/who_tb.png" class="image">
-                            <img src="images/who_tb.png" alt="WHO TB image" style="width: 300px; height: auto; display: block; margin: 0 auto;" />
+                            <img src="images/who_tb.png" alt="WHO TB image"  />
                         </a>
                         <h3>Data Extaction, EDA and Regression Analyses on WHO Tuberculoses Cases Dataset</h3>
                         <p>Data extaction and merging from different data sources into one dataset. Exploratory data analysis and fitting a regression model on Tuberculoses cases dataset from World Health Organization.</p>
@@ -109,7 +118,7 @@
 
                     <article class="post">
                         <a href="images/travel_insurence.png" class="image">
-                            <img src="images/travel_insurence.png" alt="travel_insurence" style="width: 300px; height: auto; display: block; margin: 0 auto;" />
+                            <img src="images/travel_insurence.png" alt="travel_insurence"  />
                         </a>
                         <h3>Travel Insurance Prediction with Supervised ML</h3>
                         <p>Exploratory data analysis and Statistical Modeling of travel insurence data. Predicting insurence outcomes with suppervised machine learning algorithms.</p>
@@ -120,7 +129,7 @@
 
                     <article class="post">
                         <a href="images/lithuania_suicide.png" class="image">
-                            <img src="images/lithuania_suicide.png" alt="lithuania_suicide" style="width: 300px; height: auto; display: block; margin: 0 auto;" />
+                            <img src="images/lithuania_suicide.png" alt="lithuania_suicide" />
                         </a>
                         <h3>Suicide Statistics of Lithuania</h3>
                         <p>Exploratory data analysis of Lithuania's suicide counts and rates from 2001 to 2024.</p>
