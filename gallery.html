@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
         /* Top-left label styles */
@@ -36,11 +37,71 @@
         }
 
         body.projects-page #wrapper .posts {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .gallery-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-item .image {
+            flex: 3;               
+            max-width: 600px;      
+            cursor: pointer;      
+        }
+
+        .gallery-item .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item .image:hover img {
+            transform: scale(1.05);  /* Slight zoom on hover */
+        }
+
+        .gallery-item .description {
+            flex: 1;               /* Description takes less space */
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+        }
+
+        .gallery-item .description h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        @media screen and (max-width: 768px) {
+            .gallery-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .gallery-item .image,
+            .gallery-item .description {
+                max-width: 100%;
+                flex: none;
+            }
+
+            .gallery-item .description {
+                margin-top: 1rem;
+            }
         }
     </style>
+
 </head>
 <body class="is-preload projects-page">
 
@@ -62,7 +123,7 @@
             <div class="content">
                 <div class="inner">
                     <h1>Beautiful Data Gallery</h1>
-                    <p>Welcome to the Beautiful Data Gallery, where data meets artistry. Explore stunning, aesthetically pleasing visualizations that transform complex datasets into captivating, easy-to-understand visuals.</p>
+                    <p>Welcome to the Beautiful Data Gallery, where data meets artistry. Explore aesthetically pleasing visualizations that transform complex datasets into captivating visuals.</p>
                 </div>
             </div>
 
@@ -72,10 +133,43 @@
         <section>
             <div class="inner" style="padding: 3rem;">
                 <h2 class="major">Gallery</h2>
+                <h3 class="major">Machine Learning Algorithms</h3>
                 <div class="posts">
+                    <article class="gallery-item">
+                        <div class="image">
+                        <a href="images/gallery/knn_surface_only.png" data-lightbox="gallery"
+                         data-title="The KNN decision surface visualizes how the K-Nearest Neighbors model predicts
+                            travel insurance purchase likelihood based on customers' Age and Annual Income.">
+                            <img src="images/gallery/knn_surface_only.png" alt="KNN" />
+                        </a>
+                        </div>
+                        <div class="description">
+                        <h3>KNN Decision Surface</h3>
+                        <p>The KNN decision surface visualizes how the K-Nearest Neighbors model predicts
+                            travel insurance purchase likelihood based on customers' Age and Annual Income.
+                            To see the original data source click 
+                            <a href="https://www.kaggle.com/datasets/tejashvi14/travel-insurance-prediction-data"
+                             target="_blank" rel="noopener noreferrer">here</a>.</p>
+                        </div>
+                    </article>
 
-                 <h3>Comming Soon!</h3>
-
+                    <article class="gallery-item">
+                        <div class="image">
+                        <a href="images/gallery/svm_surface_only.png" data-lightbox="gallery" 
+                        data-title="The SVM decision surface visualizes how the Support Vector Machine model predicts
+                            travel insurance purchase likelihood based on customers' Age and Annual Income.">
+                            <img src="images/gallery/svm_surface_only.png" alt="SVM" />
+                        </a>
+                        </div>
+                        <div class="description">
+                        <h3>SVM Decision Surface</h3>
+                        <p>The SVM decision surface visualizes how the Support Vector Machine model predicts
+                            travel insurance purchase likelihood based on customers' Age and Annual Income.
+                            To see the original data source click 
+                            <a href="https://www.kaggle.com/datasets/tejashvi14/travel-insurance-prediction-data"
+                             target="_blank" rel="noopener noreferrer">here</a>.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -98,6 +192,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
 
 </body>
 </html>
