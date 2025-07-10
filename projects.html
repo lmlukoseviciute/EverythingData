@@ -42,6 +42,16 @@
             grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
             gap: 2rem;
         }
+        @media screen and (max-width: 768px) {
+            body.projects-page #wrapper .posts {
+                grid-template-columns: 1fr !important;
+            }
+            
+            .post img {
+                width: 100% !important;
+                height: auto !important;
+          }
+      }
 
     </style>
 </head>
