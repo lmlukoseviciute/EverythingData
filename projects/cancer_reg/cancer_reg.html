@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Breast Cancer Dataset</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+    <style>
+        #logo-section {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1000;
+        }
+        #logo-section h1 {
+            font-size: 1rem;
+            margin: 0;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        #wrapper {
+            padding: 4rem 2rem;
+        }
+        .image.main img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    
+
+<!-- Top-left logo -->
+<section id="logo-section">
+    <div class="content">
+        <h1><a href="../../index.html">Laima | Everything Data</a></h1>
+    </div>
+</section>
+
+<div id="wrapper">
+    <header>
+        <div class="inner" style="text-align: center;">
+            <img src="../../images/cancer_reg.png" alt="Cancer Regression Visualization"
+                style="max-width: 400px; width: 100%; height: auto; margin: 0 auto; display: block;" />
+
+
+            <h2 style="margin-top: 1rem;">Logistic Regression for Breast Cancer Dataset</h2>
+
+            <p>
+                Exploratory data analysis and tumor type prediction of breast cancer dataset.
+                 Training a Logistic Regression prediction model.
+            </p>
+        </div>
+    </header>
+
+
+    <section>
+        
+
+        <h3>Overview</h3>
+        <p>For this classification task, we used the Breast Cancer Wisconsin Diagnostic Dataset available
+             from sklearn.datasets. This dataset is widely used for binary classification and contains
+              30 numerical features computed from digitized images of breast masses.
+             The goal is to predict whether a tumor is malignant (0) or benign (1) based on the given features.</p>
+
+       <h3>Key Highlights</h3>
+
+        <ul>
+            <li>Performed EDA on the dataset. You can see some examples of visualisations below.</li>
+        </ul>
+
+        <div class="visuals" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 2rem;">
+            <div style="flex: 1 1 300px; text-align: center;">
+                <a href="../../images/projects/cancer_reg/pairwise_scatter.png" target="_blank">
+                    <img src="../../images/projects/cancer_reg/pairwise_scatter.png" alt="Scatter plot" style="width: 80%; height: auto; border-radius: 8px;">
+                </a>
+                <p>Figure 1: Example pairwise scatter plot of some features.</p>
+            </div>
+        </div>
+
+        <ul>
+            <li>Correlation analyses of features.</li>
+        </ul>
+
+        <div class="visuals" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 2rem;">
+            <div style="flex: 1 1 300px; text-align: center;">
+                <a href="../../images/projects/cancer_reg/coorelation_analyses.png" target="_blank">
+                    <img src="../../images/projects/cancer_reg/coorelation_analyses.png" alt="Correlation Heatmap" style="width: 80%; height: auto; border-radius: 8px;">
+                </a>
+                <p>Figure 2: Pearson's correlation coefficients heatmaps.</p>
+            </div>
+        </div>
+
+        <ul>
+            <li>The logistic regression model performed exceptionally well on the test set.</li>
+            <li>Accuracy: 0.974 — indicating that nearly 97% of predictions were correct.</li>
+            <li>Confusion Matrix: Only 3 misclassifications out of 114 samples (1 false positive, 2 false negatives).</li>
+            <li>Precision & Recall: Both classes achieved high scores, with precision and recall ranging from 0.96 to 0.99, 
+                reflecting strong performance in detecting both malignant and benign cases.</li>
+            <li>F1-Score: Balanced around 0.97–0.98, showing that the model maintains both high precision and recall.</li>
+            <li>ROC AUC Score: 0.997 — suggesting excellent discriminatory ability, very close to perfect classification.</li>
+        </ul>
+
+        <div class="visuals" style="display: flex; gap: 2rem; justify-content: center; align-items: flex-start; margin-top: 2rem; flex-wrap: wrap;">
+
+            <!-- Column 1 -->
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; flex: 1 1 300px;">
+                <div style="text-align: center;">
+                    <a href="../../images/projects/cancer_reg/conf_matrix.png" target="_blank">
+                        <img src="../../images/projects/cancer_reg/conf_matrix.png" alt="Confusion matrix" style="width: 100%; height: auto; border-radius: 8px;">
+                    </a>
+                    <p>Figure 3: Confusion matrix of logistic regression model.</p>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; flex: 1 1 300px;">
+                <div style="text-align: center;">
+                    <a href="../../images/projects/cancer_reg/roc.png" target="_blank">
+                        <img src="../../images/projects/cancer_reg/roc.png" alt="ROC curve" style="width: 100%; height: auto; border-radius: 8px;">
+                    </a>
+                    <p>Figure 4: Receiver Operating Characteristic Curve</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        
+        <ul class="actions">
+            <li><a href="https://github.com/lmlukoseviciute/Cancer-Regression" class="button primary">View on GitHub</a></li>
+        </ul>
+    </section>
+</div>
+
+<footer id="footer">
+    <p class="copyright">
+        &copy; 2025 Laima. Design: <a href="https://html5up.net">HTML5 UP</a>.
+    </p>
+</footer>
+
+<!-- Background -->
+<div id="bg"></div>
+
+<!-- Scripts -->
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.scrollex.min.js"></script>
+<script src="../../assets/js/browser.min.js"></script>
+<script src="../../assets/js/breakpoints.min.js"></script>
+<script src="../../assets/js/util.js"></script>
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
