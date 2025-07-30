@@ -108,16 +108,17 @@
         <ul>
             <li>Global reported TB cases each year per 100,000 inhabitants</li>
         </ul>
-        <div style="width: 100%; display: flex; justify-content: center; margin: 2rem 0;">
-            <div style="width: 100%; max-width: 1000px; aspect-ratio: 16 / 9;">
-                <iframe
-                src="../../images/projects/who_tb/tb_world_map_cases100k.html"
-                style="width: 100%; height: 100%; border: none; display: block;"
-                loading="lazy"
-                allowfullscreen>
-                </iframe>
-            </div>
-        </div>
+        <div id="plotly-embed-100k"></div>
+        <script>
+        fetch('../../images/projects/who_tb/who_tb_map_100k_embed.html')
+            .then(response => response.text())
+            .then(html => {
+            document.getElementById('plotly-embed-100k').innerHTML = html;
+            })
+            .catch(error => {
+            console.error('Error loading Plotly embed:', error);
+            });
+        </script>
 
 
        
