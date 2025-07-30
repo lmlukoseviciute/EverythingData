@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Fast Food Dataset</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+    <style>
+        #logo-section {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1000;
+        }
+        #logo-section h1 {
+            font-size: 1rem;
+            margin: 0;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        #wrapper {
+            padding: 4rem 2rem;
+        }
+        .image.main img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    
+
+<!-- Top-left logo -->
+<section id="logo-section">
+    <div class="content">
+        <h1><a href="../../index.html">Laima | Everything Data</a></h1>
+    </div>
+</section>
+
+<div id="wrapper">
+    <header>
+        <div class="inner" style="text-align: center;">
+            <img src="../../images/fast_food.png" alt="Fast Food Visualization"
+                style="max-width: 400px; width: 100%; height: auto; margin: 0 auto; display: block;" />
+
+
+            <h2 style="margin-top: 1rem;">A/B Testing of Fast Food Marketing Strategies</h2>
+
+            <p>
+                This dataset compares the effectiveness of different marketing strategies through A/B testing in the fast food industry.
+            </p>
+        </div>
+    </header>
+
+
+    <section>
+        
+
+        <h3>Overview</h3>
+
+        <p>The new product was introduced at multiple randomly selected locations, with each location assigned one of the three promotional 
+            strategies. Weekly sales data for the new item were collected over a four-week period to measure the performance of each campaign. This
+            <a href="https://www.kaggle.com/datasets/chebotinaa/fast-food-marketing-campaign-ab-test" target="_blank">
+                Kaggle dataset
+            </a> 
+            captures sales data from a fast-food chain's A/B testing of three different marketing campaigns over four weeks. It includes
+             information on store locations, market characteristics, promotional strategies, and sales performance.
+        </p>
+
+       <h3>Key Highlights</h3>
+
+        <ul>
+            <li>Performed EDA on the dataset. You can see some examples of visualisations below.</li>
+        </ul>
+
+        <div class="visuals" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 2rem;">
+            <div style="flex: 1 1 300px; text-align: center;">
+                <a href="../../images/projects/fast_food/sales_by_cat.png" target="_blank">
+                    <img src="../../images/projects/fast_food/sales_by_cat.png" alt="Scatter plot" style="width: 100%; height: auto; border-radius: 8px;">
+
+                </a>
+                <p>Figure 1: Sales ditribution in different categories.</p>
+            </div>
+        </div>
+
+        <ul>
+            <li>Different statistical tests to compare the distributions of sales were performed. You can see some examples of visualisations below./</li>
+        </ul>
+
+        <div class="visuals" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 2rem;">
+            <div style="flex: 1 1 300px; text-align: center;">
+                <a href="../../images/projects/fast_food/sales_dist_by_prom.png" target="_blank">
+                    <img src="../../images/projects/fast_food/sales_dist_by_prom.png" alt="Sales " style="max-width: 700px; width: 100%; height: auto; margin: 0 auto; border-radius: 8px;">
+                </a>
+                <p>Figure 2: Sales distribution by promotion group.</p>
+            </div>
+        </div>
+
+        <ul>
+            <li>A Kruskal-Wallis H test indicated significant differences in sales between at least one pair of promotional groups.
+                 Follow-up Mann-Whitney U tests revealed that Promotions 1 and 3 performed best, while Promotion 2 was significantly 
+                 worse in terms of generated sales.</li>
+            <li>Although the median sales for Promotion 1 (55.39) was slightly higher than Promotion 3 (51.16), the difference 
+                was not statistically significant. Therefore, other considerations—such as implementation cost, operational 
+                feasibility, or scalability—should factor into the final decision between these top-performing campaigns.</li>
+        </ul>
+
+
+
+        
+        <ul class="actions">
+            <li><a href="https://github.com/lmlukoseviciute/access-request" class="button primary">View on GitHub</a></li>
+        </ul>
+    </section>
+</div>
+
+<footer id="footer">
+    <p class="copyright">
+        &copy; 2025 Laima. Design: <a href="https://html5up.net">HTML5 UP</a>.
+    </p>
+</footer>
+
+<!-- Background -->
+<div id="bg"></div>
+
+<!-- Scripts -->
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.scrollex.min.js"></script>
+<script src="../../assets/js/browser.min.js"></script>
+<script src="../../assets/js/breakpoints.min.js"></script>
+<script src="../../assets/js/util.js"></script>
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
