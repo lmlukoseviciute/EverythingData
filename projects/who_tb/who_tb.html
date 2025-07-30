@@ -35,6 +35,25 @@
             display: block;
             margin: 2rem auto;
         }
+        .responsive-iframe-wrapper {
+        width: 100vw;
+        max-width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        }
+        .responsive-iframe-wrapper .iframe-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        }
+        .responsive-iframe-wrapper iframe {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -90,16 +109,14 @@
         </ul>
        <!-- Block 1 -->
 
-        <div class="visuals" style="margin: 1rem 0;">
-           <div style="width: 100%; max-width: 1000px; margin: auto; margin-bottom: 2rem;">
-                <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0;">
-                    <iframe 
-                        src="../../images/projects/who_tb/tb_world_map_cases.html"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-                        allowfullscreen
-                        loading="lazy">
-                    </iframe>
-                </div>
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%; max-width: 100%; margin: 2rem 0;">
+            <div style="width: 100%; max-width: 600px; aspect-ratio: 16 / 9;">
+                <iframe
+                src="../../images/projects/who_tb/tb_world_map_cases.html"
+                style="width: 100%; height: 100%; border: none;"
+                loading="lazy"
+                allowfullscreen>
+                </iframe>
             </div>
         </div>
 
@@ -108,15 +125,9 @@
         <ul>
             <li>Global reported TB cases each year per 100,000 inhabitants</li>
         </ul>
-        <div class="visuals" style="margin: 1rem 0;">
-            <div style="width: 100%; max-width: 1000px; margin: auto; margin-bottom: 2rem; position: relative; aspect-ratio: 16 / 9;">
-                <iframe
-                    src="../../images/projects/who_tb/tb_world_map_cases100k.html"
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-                    title="TB World Map Cases"
-                    loading="lazy"
-                    allowfullscreen>
-                </iframe>
+        <div class="responsive-iframe-wrapper">
+            <div class="iframe-container">
+                <iframe src="../../images/projects/who_tb/tb_world_map_cases.html" loading="lazy" allowfullscreen></iframe>
             </div>
         </div>
 
