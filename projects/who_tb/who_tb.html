@@ -109,21 +109,9 @@
             <li>Global reported TB cases each year per 100,000 inhabitants</li>
         </ul>
         <div id="plotly-embed-100k"></div>
-        <script>
-        fetch('../../images/projects/who_tb/who_tb_map_100k_embed.html')
-            .then(response => response.text())
-            .then(html => {
-            document.getElementById('plotly-embed-100k').innerHTML = html;
-            })
-            .catch(error => {
-            console.error('Error loading Plotly embed:', error);
-            });
-        </script>
+        <script src="../../images/projects/who_tb/who_tb_map_100k_embed.js"></script>
 
 
-       
-
-        
         <ul class="actions">
             <li><a href="https://github.com/lmlukoseviciute/who_tb_data" class="button primary">View on GitHub</a></li>
         </ul>
