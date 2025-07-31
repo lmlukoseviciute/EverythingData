@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Spotify EDA</title>
+    <meta charset="utf-8" />
+    <script data-goatcounter="https://everythingdata.goatcounter.com/count"
+        		async src="//gc.zgo.at/count.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+    <style>
+        #logo-section {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1000;
+        }
+        #logo-section h1 {
+            font-size: 1rem;
+            margin: 0;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        #wrapper {
+            padding: 4rem 2rem;
+        }
+        .image.main img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    
+
+<!-- Top-left logo -->
+<section id="logo-section">
+    <div class="content">
+        <h1><a href="../../index.html">Laima | Everything Data</a></h1>
+    </div>
+</section>
+
+<div id="wrapper">
+    <header>
+        <div class="inner" style="text-align: center;">
+            <img src="../../images/spotify.png" alt="Spotify EDA Visualization"
+                style="max-width: 400px; width: 100%; height: auto; margin: 0 auto; display: block;" />
+
+
+            <h2 style="margin-top: 1rem;">EDA of Spotify Top 50 Hits</h2>
+
+            <p>Exploratory data analysis of Lithuania's suicide counts and rates from 2001 to 2024.</p>
+        </div>
+    </header>
+
+
+    <section>
+        
+
+        <h3>Overview</h3>
+        <p>The following analysis examines suicide statistics in Lithuania from 2001 to 2024.
+             The data was sourced from the Lithuanian Institute of Hygiene (HI)
+            <a href="https://stat.hi.lt/default.aspx?report_id=244" target="_blank">
+                database.
+            </a> 
+            This dataset includes annual counts and rates of suicides overall, as well as broken 
+            down by gender. The aim of this analysis is to explore trends over time, focusing on 
+            changes in suicide counts and rates among both males and females. </p>
+
+       <h3>Key Highlights</h3>
+
+       <p>Over the past two decades (from 2001 to 2024), suicide rates in Lithuania have declined 
+        significantly for both men and women. This downward trend is particularly pronounced among males,
+         who historically have had disproportionately higher suicide rates.</p>
+        <ul>
+            <li>Male suicide rate fell dramatically:
+                from the highest count of 1551 (with rate 81.38 per 100000 habitants) in 2002
+                 to 527 (with rate 32.24 per 100000 habitants) in 2022.</li>
+            <li>Female suicide rate also declined:
+                from the highest count of 278 (with rate 15.04 per 100000 habitants) in 2001 
+                to 101 (with rate 6.69 per 100000 habitants) in 2022.</li>
+        </ul>
+
+        <div class="visuals" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 2rem;">
+            <div style="flex: 1 1 300px; text-align: center;">
+                <a href="../../images/projects/spotify/bar_line_plot.png" target="_blank">
+                    <img src="../../images/projects/spotify/bar_line_plot.png" alt="Bar and Line Plot" style="width: 90%; height: auto; border-radius: 8px;">
+                </a>
+                <p>Figure 1: Suicide Counts and Rates by Gender and Year.</p>
+            </div>
+        </div>
+        
+        <ul class="actions">
+            <li><a href="https://github.com/lmlukoseviciute/spotify" class="button primary">View Full Analyses on GitHub</a></li>
+        </ul>
+    </section>
+</div>
+
+<footer id="footer">
+    <p class="copyright">
+        &copy; 2025 Laima. Design: <a href="https://html5up.net">HTML5 UP</a>.
+    </p>
+</footer>
+
+<!-- Background -->
+<div id="bg"></div>
+
+<!-- Scripts -->
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.scrollex.min.js"></script>
+<script src="../../assets/js/browser.min.js"></script>
+<script src="../../assets/js/breakpoints.min.js"></script>
+<script src="../../assets/js/util.js"></script>
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
