@@ -56,7 +56,7 @@
                 display: block;
                 width: 100%;
                 height: auto; /* let iframe grow naturally */
-                min-height: 500px; /* optional fallback */
+                min-height: 300px; /* optional fallback */
             }
         }
 
@@ -113,12 +113,23 @@
             <li>Global reporter TB cases each year in the World. The upper limit of the color bar is the 95th percentile of the whole data. Meaning that the yellow countries </li>
         </ul>
         <div style="width: 100%; padding: 0 1rem; box-sizing: border-box;">
-            <div style="width: 100%, max-width: 1000px; margin: 0 auto;">
-                
+            <div style="width: 100%; max-width: 1400px; margin: 0 auto; overflow-x: auto;">
+                <!-- Desktop iframe -->
+                <iframe
+                    id="iframe-desktop"
+                    src="plot_cases_desktop.html"
+                    title="Plot Desktop Version"
+                ></iframe>
+
+                <!-- Mobile iframe -->
+                <iframe
+                    id="iframe-mobile"
+                    src="plot_cases_mobile.html"
+                    title="Plot Desktop Version"
+                ></iframe>
+
             </div>
         </div>
-
-
 
 
         <ul>
@@ -131,28 +142,27 @@
                 <!-- Desktop iframe -->
                 <iframe
                     id="iframe-desktop"
-                    src="plot_cases_desktop.html"
+                    src="plot_cases_100k_desktop.html"
+                    title="Plot Desktop Version"
+                ></iframe>
+
+                <!-- Mobile iframe -->
+                <iframe
+                    id="iframe-mobile"
+                    src="plot_cases_100k_mobile.html"
                     title="Plot Desktop Version"
                 ></iframe>
 
             </div>
         </div>
 
-        <div style="width: 100%; max-width: 1000px;  height: auto; margin: 0 auto; overflow: hidden;">
-            <iframe
-                id="iframe-mobile"
-                src="plot_cases_mobile.html"
-                title="Plot Mobile Version"
-                style="width: 100%; height: 100%; border: none;"
-            ></iframe>
-        </div>
 
 
 
 
         <ul class="actions">
             <p> </p>
-            <li><a href="https://github.com/lmlukoseviciute/who_tb" class="button primary">View Full Analyses on GitHub</a></li>
+            <li><a href="https://github.com/lmlukoseviciute/who_tb_data" class="button primary">View Full Analyses on GitHub</a></li>
         </ul>
     </section>
 </div>
