@@ -9,26 +9,30 @@
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
     <link rel="stylesheet" href="../../assets/css/main.css" />
     <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
-    <style>
+   <style>
         #logo-section {
             position: absolute;
             top: 1rem;
             left: 1rem;
             z-index: 1000;
         }
+
         #logo-section h1 {
             font-size: 1rem;
             margin: 0;
             opacity: 0;
             animation: fadeIn 2s ease-in-out forwards;
         }
+
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
+
         #wrapper {
             padding: 4rem 2rem;
         }
+
         .image.main img {
             width: 100%;
             max-width: 600px;
@@ -36,33 +40,29 @@
             display: block;
             margin: 2rem auto;
         }
+
         iframe {
             width: 100%;
             height: 700px;
             border: none;
-            display: none;
-        }
-        /* Show iframe with id desktop on wide screens */
-        @media (min-width: 769px) {
-            #iframe-desktop {
-            display: block;
-            }
-        }
-        /* Show iframe with id mobile on narrow screens */
-        #iframe-mobile {
-            width: 1000px; /* or the original full size of the plot */
-            height: 700px;
-            border: none;
-            transform: scale(0.9);       /* scales it down */
-            transform-origin: top left;  /* scales from the top-left corner */
+            display: none; /* hide by default */
         }
 
+        /* Show iframe-desktop only on desktop */
+        @media (min-width: 769px) {
+            #iframe-desktop {
+                display: block;
+            }
+        }
+
+        /* Show iframe-mobile only on mobile */
         @media (max-width: 768px) {
             #iframe-mobile {
-            width: 100%;               /* ensures it fits screen */
-            height: 630px;             /* adjust proportionally to scale */
-            transform: scale(0.5);
-            transform-origin: top left;
+                display: block;
+                width: 1000px;
+                height: 700px;
+                transform: scale(0.5);
+                transform-origin: center;
             }
         }
     </style>
@@ -127,13 +127,13 @@
         </ul>
 
         <div style="width: 100%; padding: 0 1rem; box-sizing: border-box;">
-            <div style="width: 100%, max-width: 1000x; margin: 0 auto;">
+            <div style="width: 100%; max-width: 1400px; margin: 0 auto;">
                 <!-- Desktop iframe -->
                 <iframe
                     id="iframe-desktop"
                     src="plot_desktop.html"
                     title="Plot Desktop Version"
-                    ></iframe>
+                ></iframe>
 
                 <!-- Mobile iframe -->
                 <iframe
@@ -141,8 +141,6 @@
                     src="plot_desktop.html"
                     title="Plot Mobile Version"
                 ></iframe>
-
-
             </div>
         </div>
 
