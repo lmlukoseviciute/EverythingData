@@ -49,9 +49,20 @@
             }
         }
         /* Show iframe with id mobile on narrow screens */
+        #iframe-mobile {
+            width: 1000px; /* or the original full size of the plot */
+            height: 700px;
+            border: none;
+            transform: scale(0.9);       /* scales it down */
+            transform-origin: top left;  /* scales from the top-left corner */
+        }
+
         @media (max-width: 768px) {
             #iframe-mobile {
-            display: block;
+            width: 100%;               /* ensures it fits screen */
+            height: 630px;             /* adjust proportionally to scale */
+            transform: scale(0.5);
+            transform-origin: top left;
             }
         }
     </style>
@@ -127,7 +138,7 @@
                 <!-- Mobile iframe -->
                 <iframe
                     id="iframe-mobile"
-                    src="plot_mobile.html"
+                    src="plot_desktop.html"
                     title="Plot Mobile Version"
                 ></iframe>
 
