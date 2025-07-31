@@ -16,23 +16,19 @@
             left: 1rem;
             z-index: 1000;
         }
-
         #logo-section h1 {
             font-size: 1rem;
             margin: 0;
             opacity: 0;
             animation: fadeIn 2s ease-in-out forwards;
         }
-
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-
         #wrapper {
             padding: 4rem 2rem;
         }
-
         .image.main img {
             width: 100%;
             max-width: 600px;
@@ -40,30 +36,33 @@
             display: block;
             margin: 2rem auto;
         }
-
         iframe {
-            width: 100%;
-            height: 700px;
             border: none;
-            display: none; /* hide by default */
+            display: none;
+            width: 100%;
+            height: 700px; /* fallback for desktop */
         }
 
-        /* Show iframe-desktop only on desktop */
+        /* Desktop: show only desktop iframe */
         @media (min-width: 769px) {
             #iframe-desktop {
                 display: block;
             }
         }
 
-        /* Show iframe-mobile only on mobile */
+        /* Mobile: show only mobile iframe, use height: auto for responsive iframe content */
         @media (max-width: 768px) {
             #iframe-mobile {
                 display: block;
-                width: 1000px;
-                height: 700px;
-                transform: scale(0.5);
-                transform-origin: center;
+                width: 100%;
+                height: auto; /* let iframe grow naturally */
+                min-height: 500px; /* optional fallback */
             }
+        }
+
+        .plotly-graph-div {
+            height: 100% !important;
+            width: 100% !important;
         }
     </style>
 </head>
@@ -126,23 +125,29 @@
             <li>Global reported TB cases each year per 100,000 inhabitants</li>
         </ul>
 
+        
         <div style="width: 100%; padding: 0 1rem; box-sizing: border-box;">
-            <div style="width: 100%; max-width: 1400px; margin: 0 auto;">
+            <div style="width: 100%; max-width: 1400px; margin: 0 auto; overflow-x: auto;">
                 <!-- Desktop iframe -->
                 <iframe
                     id="iframe-desktop"
-                    src="plot_desktop.html"
+                    src="plot_cases_desktop.html"
                     title="Plot Desktop Version"
                 ></iframe>
 
-                <!-- Mobile iframe -->
-                <iframe
-                    id="iframe-mobile"
-                    src="plot_desktop.html"
-                    title="Plot Mobile Version"
-                ></iframe>
             </div>
         </div>
+
+        <div style="width: 100%; max-width: 1000px;  height: auto; margin: 0 auto; overflow: hidden;">
+            <iframe
+                id="iframe-mobile"
+                src="plot_cases_mobile.html"
+                title="Plot Mobile Version"
+                style="width: 100%; height: 100%; border: none;"
+            ></iframe>
+        </div>
+
+
 
 
         <ul class="actions">
