@@ -65,40 +65,80 @@
         
 
         <h3>Overview</h3>
-        <p>The following analysis examines suicide statistics in Lithuania from 2001 to 2024.
-             The data was sourced from the Lithuanian Institute of Hygiene (HI)
-            <a href="https://stat.hi.lt/default.aspx?report_id=244" target="_blank">
-                database.
-            </a> 
-            This dataset includes annual counts and rates of suicides overall, as well as broken 
-            down by gender. The aim of this analysis is to explore trends over time, focusing on 
-            changes in suicide counts and rates among both males and females. </p>
+        <p>
+        This EDA explores Spotify’s top 50 most-streamed tracks of 2020, analyzing audio features like energy, danceability, and popularity.  
+        Dataset available on <a href="https://www.kaggle.com/datasets/atillacolak/top-50-spotify-tracks-2020">Kaggle</a>.
+        </p>
+
 
        <h3>Key Highlights</h3>
 
-       <p>Over the past two decades (from 2001 to 2024), suicide rates in Lithuania have declined 
-        significantly for both men and women. This downward trend is particularly pronounced among males,
-         who historically have had disproportionately higher suicide rates.</p>
+       <p>The most popular artists were Billie Eilish, Dua Lipa, and Travis Scott with 3 songs in the list each.</p>
         <ul>
-            <li>Male suicide rate fell dramatically:
-                from the highest count of 1551 (with rate 81.38 per 100000 habitants) in 2002
-                 to 527 (with rate 32.24 per 100000 habitants) in 2022.</li>
-            <li>Female suicide rate also declined:
-                from the highest count of 278 (with rate 15.04 per 100000 habitants) in 2001 
-                to 101 (with rate 6.69 per 100000 habitants) in 2022.</li>
+            <li>The genre distribution in the list.</li>
         </ul>
 
-        <div class="visuals" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 2rem;">
+        <div class="visuals" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; max-width: 1000px; margin-top: 2rem;">
             <div style="flex: 1 1 300px; text-align: center;">
-                <a href="../../images/projects/spotify/bar_line_plot.png" target="_blank">
-                    <img src="../../images/projects/spotify/bar_line_plot.png" alt="Bar and Line Plot" style="width: 90%; height: auto; border-radius: 8px;">
+                <a href="../../images/projects/spotify/genres.png" target="_blank">
+                    <img src="../../images/projects/spotify/genres.png" alt="Bar and Line Plot" style="width: 90%; height: auto; border-radius: 8px;">
                 </a>
-                <p>Figure 1: Suicide Counts and Rates by Gender and Year.</p>
+                <p>Figure 1: The genre distribution in the top 50 Spotify most streamed tracks.</p>
             </div>
+        </div>
+
+        <ul>
+            <li>The correlation analysis of the features.</li>
+        </ul>
+
+        <div class="visuals" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; max-width: 1000px; margin-top: 2rem;">
+            <div style="flex: 1 1 300px; text-align: center;">
+                <a href="../../images/projects/spotify/correlation analyses.png" target="_blank">
+                    <img src="../../images/projects/spotify/correlation analyses.png" alt="correlation heatmap" style="width: 90%; height: auto; border-radius: 8px;">
+                </a>
+                <p>Figure 2: Pearson's R correlation coefficient heatmap.</p>
+            </div>
+        </div>
+
+        <ul>
+            <li>The correlation analysis of the features.</li>
+        </ul>
+
+        <div class="visuals" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; max-width: 1000px; margin-top: 2rem;">
+            <div style="flex: 1 1 300px; text-align: center;">
+                <a href="../../images/projects/spotify/histograms.png" target="_blank">
+                    <img src="../../images/projects/spotify/histograms.png" alt="correlation heatmap" style="width: 90%; height: auto; border-radius: 8px;">
+                </a>
+                <p>Figure 3: Feature distribution in the dataset.</p>
+            </div>
+        </div>
+
+        <ul>
+            <li>The distribution of features across genres.</li>
+        </ul>
+
+        <div class="visuals" style="display: flex; gap: 2rem; justify-content: center; align-items: flex-start; margin-top: 2rem; flex-wrap: wrap;">
+    
+            <!-- Column 1 -->
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; flex: 1 1 300px;">
+                <div style="text-align: center;">
+                    <img src="../../images/projects/spotify/accous_boxplot.png" alt="Accous by genre" style="width: 100%; height: auto; border-radius: 8px;">
+                    <p>Figure 4: Acousticness in different genres.</p>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; flex: 1 1 300px;">
+                <div style="text-align: center;">
+                    <img src="../../images/projects/spotify/loudness_boxplot.png" alt="Loudness by genre" style="width: 100%; height: auto; border-radius: 8px;">
+                    <p>Figure 5: Loudness in different genres.</p>
+                </div>
+            </div>
+
         </div>
         
         <ul class="actions">
-            <li><a href="https://github.com/lmlukoseviciute/spotify" class="button primary">View Full Analyses on GitHub</a></li>
+            <li><a href="https://github.com/lmlukoseviciute/access-requests" class="button primary">View Full Analyses on GitHub</a></li>
         </ul>
     </section>
 </div>
