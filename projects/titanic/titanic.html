@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Titanic Survival Prediction</title>
+    <meta charset="utf-8" />
+    <script data-goatcounter="https://everythingdata.goatcounter.com/count"
+        		async src="//gc.zgo.at/count.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+    <style>
+        #logo-section {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1000;
+        }
+        #logo-section h1 {
+            font-size: 1rem;
+            margin: 0;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        #wrapper {
+            padding: 4rem 2rem;
+        }
+        .image.main img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    
+
+<!-- Top-left logo -->
+<section id="logo-section">
+    <div class="content">
+        <h1><a href="../../index.html">Laima | Everything Data</a></h1>
+    </div>
+</section>
+
+<div id="wrapper">
+    <header>
+        <div class="inner" style="text-align: center;">
+            <img src="../../images/titanic.png" alt="Titanic Visualization"
+                style="max-width: 400px; width: 100%; height: auto; margin: 0 auto; display: block;" />
+
+
+            <h2 style="margin-top: 1rem;">EDA and Survival Prediction of Titanic Dataset</h2>
+
+            <p>
+
+                Exploratory data analysis and survival prediction of Titanic dataset. Training a Random Forest prediction model.
+            
+            </p>
+        </div>
+    </header>
+
+
+    <section>
+        
+
+        <h3>Overview</h3>
+        <p>This project uses the classic
+            <a href="https://www.kaggle.com/competitions/titanic" target="_blank">
+                 Titanic dataset from Kaggle 
+            </a> 
+            to predict passenger survival using a Random Forest Classifier. 
+            It demonstrates key steps in an end-to-end machine learning workflow, including exploratory data analysis (EDA),
+             data preprocessing, feature engineering, model training, and evaluation.</p>
+
+        <h3>Key Highlights</h3>
+        <p> More women survived than men, and passengers from higher classes had higher survival rates. The majority of those who
+             died were from the lowest class. Therefore, being a woman in a higher class offered the greatest chance of survival.</p>
+
+
+        <ul>
+            <li>Countplots for different features.</li>
+        </ul>
+
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; flex: 1 1 300px;">
+            <div style="text-align: center;">
+                    <img src="../../images/projects/titanic/countplots.png" alt="Numerical features by category distribution" style="width: 100%; height: auto; max-width: 1000px; border-radius: 8px;">
+                    <p>Figure 1: Categorical feature distribution.</p>
+            </div>
+        </div>
+
+        <ul>
+            <li>Countplots for different features by survival.</li>
+        </ul>
+
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; flex: 1 1 300px;">
+            <div style="text-align: center;">
+                    <img src="../../images/projects/titanic/countplots_by_suvival.png" alt="Numerical features by category distribution" style="width: 100%; height: auto; max-width: 1000px; border-radius: 8px;">
+                    <p>Figure 2: Categorical feature distribution by survival.</p>
+            </div>
+        </div>
+
+        <ul>
+            <li>Random Forest had accuracy of 83.24%. The first 3 trees in the forest</li>
+        </ul>
+
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; flex: 1 1 300px;">
+            <div style="text-align: center;">
+                    <img src="../../images/projects/titanic/trees.png" alt="Numerical features by category distribution" style="width: 100%; height: auto; border-radius: 8px;">
+                    <p>Figure 3: Representation of trees in the forest.</p>
+            </div>
+        </div>
+
+        
+        <ul class="actions">
+            <li><a href="https://github.com/lmlukoseviciute/titanic_survival_prediction" class="button primary">View Full Analyses on GitHub</a></li>
+        </ul>
+    </section>
+</div>
+
+<footer id="footer">
+    <p class="copyright">
+        &copy; 2025 Laima. Design: <a href="https://html5up.net">HTML5 UP</a>.
+    </p>
+</footer>
+
+<!-- Background -->
+<div id="bg"></div>
+
+<!-- Scripts -->
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.scrollex.min.js"></script>
+<script src="../../assets/js/browser.min.js"></script>
+<script src="../../assets/js/breakpoints.min.js"></script>
+<script src="../../assets/js/util.js"></script>
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>

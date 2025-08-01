@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Mental Health EDA</title>
+    <meta charset="utf-8" />
+    <script data-goatcounter="https://everythingdata.goatcounter.com/count"
+        		async src="//gc.zgo.at/count.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+    <style>
+        #logo-section {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1000;
+        }
+        #logo-section h1 {
+            font-size: 1rem;
+            margin: 0;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        #wrapper {
+            padding: 4rem 2rem;
+        }
+        .image.main img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    
+
+<!-- Top-left logo -->
+<section id="logo-section">
+    <div class="content">
+        <h1><a href="../../index.html">Laima | Everything Data</a></h1>
+    </div>
+</section>
+
+<div id="wrapper">
+    <header>
+        <div class="inner" style="text-align: center;">
+            <img src="../../images/mental_health.png" alt="Mental Health Visualization"
+                style="max-width: 400px; width: 100%; height: auto; margin: 0 auto; display: block;" />
+
+
+            <h2 style="margin-top: 1rem;">Mental Health Data Analysis</h2>
+
+            <p>
+
+                Analyzing survey data on mental health in the tech industry to uncover trends and areas for improvement.
+            
+            </p>
+        </div>
+    </header>
+
+
+    <section>
+        
+
+        <h3>Overview</h3>
+
+        <p>In this project, I perform data preparation and cleaning, followed by Exploratory Data Analysis (EDA) on mental health trends in the tech industry.
+            The dataset comes from
+            <a href="https://www.kaggle.com/datasets/anth7310/mental-health-in-the-tech-industry/data" target="_blank">
+                OSMI (shared by Anthony Inthavong on Kaggle)
+            </a> 
+            conducted surveys between 2014–2019 targeting mental health perceptions and mental health conditions (MHC) among tech professionals.</p>
+
+        <h3>Key Highlights</h3>
+        <p>The most commonly reported mental health conditions were:
+            <ul>
+                <li>Depression and Bipolar Disorders: 28.9%</li>
+                <li>Anxiety Disorders: 24.1%</li>
+                <li>Neurodevelopmental Disorders: 10.9%</li>
+            </ul>
+        </p>
+
+
+        <ul>
+            <li>Survey overview</li>
+        </ul>
+        <div class="visuals" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 2rem;">
+            <div style="flex: 1 1 300px; text-align: center;">
+                <img src="../../images/projects/mental_health/survey_overview.png" alt="Respondant overview" style="width: 100%; height: auto; max-width: 1000px;  border-radius: 8px;">
+                <p>Figure 1: Overview of the repondants answers.</p>
+            </div>
+        </div>
+
+        <div class="visuals" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 2rem;">
+            <div style="flex: 1 1 300px; text-align: center;">
+                <img src="../../images/projects/mental_health/mhc_overview.png" alt="MHC" style="width: 100%; height: auto; max-width: 1000px;  border-radius: 8px;">
+                <p>Figure 2: Overview of the reported MHCs.</p>
+            </div>
+        </div>
+
+        <ul>
+            <li>Correlation analyses of features.</li>
+        </ul>
+        <div class="visuals" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 2rem;">
+            <div style="flex: 1 1 300px; text-align: center;">
+                <img src="../../images/projects/mental_health/correlation.png" alt="Coorelation" style="width: 100%; height: auto; max-width: 1000px;  border-radius: 8px;">
+                <p>Figure 3: PhiK correlation coefficients heatmaps.</p>
+            </div>
+        </div>
+
+        <ul>
+            <li>Prevalance rates of different MHCs</li>
+        </ul>
+        <div class="visuals" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 2rem;">
+            <div style="flex: 1 1 300px; text-align: center;">
+                <img src="../../images/projects/mental_health/prevalance.png" alt="Coorelation" style="width: 100%; height: auto; max-width: 700px;  border-radius: 8px;">
+                <p>Figure 4: Prevalance rates with 95% confidance intervals of different MHCs</p>
+            </div>
+        </div>
+        
+        <ul class="actions">
+            <li><a href="https://github.com/lmlukoseviciute/access-request" class="button primary">View Full Analyses on GitHub</a></li>
+        </ul>
+    </section>
+</div>
+
+<footer id="footer">
+    <p class="copyright">
+        &copy; 2025 Laima. Design: <a href="https://html5up.net">HTML5 UP</a>.
+    </p>
+</footer>
+
+<!-- Background -->
+<div id="bg"></div>
+
+<!-- Scripts -->
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.scrollex.min.js"></script>
+<script src="../../assets/js/browser.min.js"></script>
+<script src="../../assets/js/breakpoints.min.js"></script>
+<script src="../../assets/js/util.js"></script>
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
