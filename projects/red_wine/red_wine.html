@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Red Wine Regression</title>
+    <meta charset="utf-8" />
+    <script data-goatcounter="https://everythingdata.goatcounter.com/count"
+        		async src="//gc.zgo.at/count.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+    <style>
+        #logo-section {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1000;
+        }
+        #logo-section h1 {
+            font-size: 1rem;
+            margin: 0;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        #wrapper {
+            padding: 4rem 2rem;
+        }
+        .image.main img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    
+
+<!-- Top-left logo -->
+<section id="logo-section">
+    <div class="content">
+        <h1><a href="../../index.html">Laima | Everything Data</a></h1>
+    </div>
+</section>
+
+<div id="wrapper">
+    <header>
+        <div class="inner" style="text-align: center;">
+            <img src="../../images/red_wine.png" alt="Travel Insurance Visualization"
+                style="max-width: 400px; width: 100%; height: auto; margin: 0 auto; display: block;" />
+
+
+            <h2 style="margin-top: 1rem;">Regression Analysis of Red Wine Quality Dataset</h2>
+
+            <p>
+                This dataset contains physicochemical properties of red wine samples to predict wine quality scores.
+                 It provides a clean and accessible foundation for regression analysis.            
+            </p>
+        </div>
+    </header>
+
+
+    <section>
+        
+
+        <h3>Overview</h3>
+        <p> In this analyses, I explore the Red Wine Quality dataset from
+            <a href="https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009" target="_blank">
+                Kaggle
+            </a> 
+            , which originates from the UCI Machine Learning Repository. The dataset was compiled by Paulo Cortez
+             and colleagues in 2009. The goal of this analysis is to understand which physicochemical properties
+              of red wine most strongly influence its quality rating, using linear regression as an explanatory tool.
+        </p>
+
+        <h3>Key Highlights</h3>
+
+        <p>The amount of alcohol, sulphates, and volatile acidity were the key features in predicting the wine quality score.</p>
+
+        <ul>
+            <li>Distribution of features by quality score</li>
+        </ul>
+
+        <div class="visuals" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; max-width: 1000px; margin-top: 2rem;">
+            <div style="flex: 1 1 300px; text-align: center;">
+                <img src="../../images/projects/red_wine/quality_by_cat.png" alt="Income vs Insurance Purchase" style="width: 80%; height: auto; border-radius: 8px;">
+                <p>Figure 1: Boxplot matrix for feature distribution by quality scores.</p>
+            </div>
+        </div>
+        
+
+        <ul>
+            <li>Correlation analyses of features.</li>
+        </ul>
+        <div class="visuals" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 2rem;">
+            <div style="flex: 1 1 300px; text-align: center;">
+                <img src="../../images/projects/red_wine/correlation.png" alt="Income vs Insurance Purchase" style="width: 80%; height: auto; border-radius: 8px;">
+                <p>Figure 2: Pearsons's R correlation coefficients heatmaps.</p>
+            </div>
+        </div>
+
+        <ul>
+            <li>Hypotheses testing provides statistical evidence that alcohol content has a positive influence on perceived wine quality.</li>
+
+        </ul>
+                   
+        
+        <ul class="actions">
+            <li><a href="https://github.com/lmlukoseviciute/access-request" class="button primary">View Full Analyses on GitHub</a></li>
+        </ul>
+    </section>
+</div>
+
+<footer id="footer">
+    <p class="copyright">
+        &copy; 2025 Laima. Design: <a href="https://html5up.net">HTML5 UP</a>.
+    </p>
+</footer>
+
+<!-- Background -->
+<div id="bg"></div>
+
+<!-- Scripts -->
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.scrollex.min.js"></script>
+<script src="../../assets/js/browser.min.js"></script>
+<script src="../../assets/js/breakpoints.min.js"></script>
+<script src="../../assets/js/util.js"></script>
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>

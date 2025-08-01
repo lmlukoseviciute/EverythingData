@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Cats A/B Test</title>
+    <meta charset="utf-8" />
+    <script data-goatcounter="https://everythingdata.goatcounter.com/count"
+        		async src="//gc.zgo.at/count.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+    <style>
+        #logo-section {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1000;
+        }
+        #logo-section h1 {
+            font-size: 1rem;
+            margin: 0;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        #wrapper {
+            padding: 4rem 2rem;
+        }
+        .image.main img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    
+
+<!-- Top-left logo -->
+<section id="logo-section">
+    <div class="content">
+        <h1><a href="../../index.html">Laima | Everything Data</a></h1>
+    </div>
+</section>
+
+<div id="wrapper">
+    <header>
+        <div class="inner" style="text-align: center;">
+            <img src="../../images/cats.png" alt="Cats A_B testing"
+                style="max-width: 400px; width: 100%; height: auto; margin: 0 auto; display: block;" />
+
+
+            <h2 style="margin-top: 1rem;">A/B Testing of Cookie Cats Game Update Strategies</h2>
+
+            <p>
+                This dataset captures player behavior before and after game update changes 
+                in the mobile game Cookie Cats. Insights in different update strategies through A/B testing.
+            </p>
+        </div>
+    </header>
+
+
+    <section>
+        
+
+        <h3>Overview</h3>
+        <p> This analysis explores the impact of a game design change in
+            <a href="https://www.kaggle.com/datasets/mursideyarkin/mobile-games-ab-testing-cookie-cats" target="_blank">
+                Cookie Cats
+            </a> 
+              a popular mobile puzzle game. 
+            Specifically, it examines the effect of shifting the game's first content gate from level 30 to level 40 
+            on player engagement and retention. To assess this, an A/B test was conducted involving 90,189 new players, 
+            who were randomly assigned to one of two groups: a control group with the gate at level 30 (gate_30) 
+            and a test group with the gate at level 40 (gate_40).
+        </p>
+        
+        <h3>Key Highlights</h3>
+        <p> There was a statistically significant difference in 7-day retention between the groups. However:
+            <ul>
+            <li>The risk difference was only 0.008, meaning 0.8% more users were retained in gate_30 than in gate_40.</li>
+            <li>This small effect size could be:
+                <ul>
+                <li>A real but minor impact of gate placement</li>
+                <li>A result of bias introduced by SRM</li>
+                <li>Or a behavioral artifact — players may have lost interest earlier than encountering level 40.</li>
+                </ul>
+            </li>
+            </ul>
+        </p>
+
+        <div class="visuals" style="display: flex; gap: 2rem; justify-content: center; align-items: flex-start; margin-top: 2rem; flex-wrap: wrap;">
+    
+            <!-- Column 1 -->
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; flex: 1 1 300px;">
+                <div style="text-align: center;">
+                    <img src="../../images/projects/cats/countplots.png" alt="Numerical features by category distribution" style="width: 115%; height: auto; border-radius: 8px;">
+                    <p>Figure 1: Countplots in different versions by category.</p>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; flex: 1 1 300px;">
+                <div style="text-align: center;">
+                    <img src="../../images/projects/cats/ret_times.png" alt="Numerical distribution" style="width: 65%; height: auto; border-radius: 8px;">
+                    <p>Figure 2: Retention times with 95% confidence intervals in different versions.</p>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <ul class="actions">
+            <li><a href="https://github.com/lmlukoseviciute/access-request" class="button primary">View Full Analyses on GitHub</a></li>
+        </ul>
+    </section>
+</div>
+
+<footer id="footer">
+    <p class="copyright">
+        &copy; 2025 Laima. Design: <a href="https://html5up.net">HTML5 UP</a>.
+    </p>
+</footer>
+
+<!-- Background -->
+<div id="bg"></div>
+
+<!-- Scripts -->
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.scrollex.min.js"></script>
+<script src="../../assets/js/browser.min.js"></script>
+<script src="../../assets/js/breakpoints.min.js"></script>
+<script src="../../assets/js/util.js"></script>
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
